@@ -11,4 +11,5 @@ class TaxRate(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
+        app_label = 'taxrates'
         unique_together = ('country', 'zip_code')
